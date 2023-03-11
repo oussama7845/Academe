@@ -1,0 +1,230 @@
+:root {
+    --blue: #01369B;
+    --footerColor: #2522;
+    --orange: #E5994A;
+    --red: #FF5038;
+    --green: #38FF94;
+    --black: #000000;
+    --white: #f8f8f8;
+    --gray: #D9D9D9;
+}
+/* Body styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Centered main heading */
+  .center-text {
+    text-align: center;
+  }
+  
+  /* Main wrapper */
+  .wrapper {
+    margin: 20px;
+    overflow-x: auto;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 15px;
+    vertical-align: middle;
+  }
+  
+  th {
+    background-color: #1E90FF;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Action icons */
+  .fa-pen-to-square {
+    color: #1E90FF;
+  }
+  
+  .fa-trash-alt {
+    color: #dc3545;
+  }
+  
+  
+
+/**/
+.overlay:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 99;
+}
+
+.post-popup {
+    width: 580px;
+    height: 280px;
+    margin:  auto;
+    position: fixed;
+
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0.65);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(0.65);
+    -ms-transform: translateX(-50%) translateY(-50%) scale(0.65);
+    -o-transform: translateX(-50%) translateY(-50%) scale(0.65);
+    transform: translateX(-50%) translateY(-50%) scale(0.65);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 0;
+}
+
+.post-popup.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+   
+}
+
+.post-project>a {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    color: var(--black);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+.post-project>a:hover {
+    color: #fff;
+}
+
+.post-project {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.post-project h3 {
+    margin: 0;
+    float: left;
+    width: 100%;
+    background-color: var(--blue);
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+
+
+.post-project-fields {
+    float: left;
+    width: 93%;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+.post-project-fields form {
+    float: left;
+    width: 100%;
+}
+
+.post-project-fields form input {
+    padding: 0 15px;
+    height: 40px;
+    width: 93%;
+}
+
+.post-project-fields form input,
+.post-project-fields form textarea,
+.post-project-fields form select {
+    width: 93%;
+    color: var(--black);
+    font-size: 14px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.post-project{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.post-project-fields form select {
+    height: 40px;
+    padding: 0 10px;
+}
+
+.post-project-fields form ul {
+    float: left;
+ 
+    width: 100%;
+}
+
+.post-project-fields form ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.post-project-fields form ul li button.active {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.post-project-fields form ul li button,
+.post-project-fields form ul li a {
+    color: var(--black);
+    font-size: 16px;
+    border: 1px solid #e5e5e5;
+    padding: 10px 25px;
+    display: inline-block;
+    background-color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.post-project-fields form ul li button:hover,
+.post-project-fields form ul li a:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.post-project-fields form input,
+.post-project-fields form textarea,
+.post-project-fields form select,
+.post-project-fields form ul li button,
+.post-project-fields form ul li a,
+job_post.post-popup,
+.post-project>a,
+.post-project-fields form ul li button,
+.post-project-fields form ul li a {
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+
+
+
+
+

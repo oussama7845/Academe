@@ -1,0 +1,86 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  header {
+  
+    color: black; /* Couleur du texte */
+    height: 80px; /* Hauteur */
+    display: flex; /* Utilisation de Flexbox pour aligner le contenu */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+  }
+  
+  .header_txt {
+    text-align: center; /* Centrage du texte */
+  }
+  
+  .header_txt h2 {
+    font-size: 2em; /* Taille de la police */
+    margin: 0; /* Suppression des marges par défaut */
+  }
+  
+  .container {
+    background-color: #fff;
+    margin: 50px auto;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .main {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .input {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"], input[type="password"] {
+    border: none;
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  button[type="submit"] {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #008080;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #006767;
+  }
+  
+  .link-problem {
+    color: #008080;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .Sign-up {
+    color: #008080;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .problem-signup{
+    margin-right: 35px;
+  }
